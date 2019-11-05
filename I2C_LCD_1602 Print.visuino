@@ -1,0 +1,161 @@
+{
+  "Version": "2",
+  "Product": "Visuino - Visual Arduino Programming",
+  "Units": [
+    {
+      "Type": "Diagram",
+      "Name": "__OpenWireRootUnit__",
+      "*": [
+        {
+          "X": 448,
+          "Name": "Arduino",
+          "Instance": {
+            "Serial": {
+              "*": [
+                {
+                  "OutputPin": {
+                    "SinkPins": [
+                      {
+                        "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.InputPin"
+                      }
+                    ]
+                  },
+                  "+": "TArduinoHardwareSerial"
+                }
+              ]
+            },
+            "+": "TArduinoBoard",
+            "AnalogInputReference": "Default",
+            "Modules": {
+              "*": [
+                {
+                  "+": "TArduinoEEPROMModule"
+                },
+                {
+                  "+": "TArduinoProcessorModule"
+                },
+                {
+                  "+": "TArduinoWatchdogTimerModule"
+                }
+              ]
+            },
+            "I2CChannels": {
+              "*": [
+                {
+                  "InputPin": {
+                    "SourcePins": [
+                      {
+                        "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPin"
+                      }
+                    ]
+                  },
+                  "+": "TArduinoI2C"
+                }
+              ]
+            },
+            "Digital": {
+              "*": [
+                {
+                  "+": "TArduinoAdditionalDigitalSerial0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSerial0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalInterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMInterruptChannel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMSPI0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSPI0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSPI0Channel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalI2C0Channel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalI2C0Channel"
+                }
+              ]
+            },
+            "SPIChannels": {
+              "*": [
+                {
+                  "+": "TArduinoSPI"
+                }
+              ]
+            },
+            "BoardType": "Arduino Uno"
+          },
+          "Type": "Component",
+          "Y": 256
+        },
+        {
+          "X": 256,
+          "Name": "LiquidCrystalDisplay1",
+          "Instance": {
+            "InputPin": {
+              "SourcePins": [
+                {
+                  "Name": "__OpenWireRootUnit__.Arduino.Serial[0].OutputPin",
+                  "ID": "__OpenWireRootUnit__.Arduino.Serial._Item0.OutputPin"
+                }
+              ]
+            },
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.Arduino.I2CChannels.I2C.InputPin",
+                  "ID": "__OpenWireRootUnit__.Arduino.I2CChannels._Item0.InputPin"
+                }
+              ]
+            },
+            "+": "TArduinoLiquidCrystalDisplayI2C"
+          },
+          "Type": "Component",
+          "Y": 336
+        }
+      ]
+    }
+  ],
+  "Content": "OpenWire Diagram"
+}
